@@ -34,3 +34,7 @@ mario.style.marginLeft = '30px';
 }, 10);
 
 document.addEventListener('keydown', jump);
+
+document.querySelector('#restart-btn').addEventListener('click', () => {
+    location.reload();
+});

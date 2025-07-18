@@ -36,12 +36,36 @@
 .clouds {
     position: absolute;
     width: 400px;
-    left: ;
+    left: 0;
  animation: clouds_animation 20s linear infinite;   
 }
 
 
+#restart-btn {
+    background: #ffcc00;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive, Arial, sans-serif;
+    font-size: 18px;
+    border: 3px solid #b8860b;
+    border-radius: 10px;
+    padding: 12px 28px;
+    box-shadow: 0 4px #b8860b, 0 8px #fff200;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    letter-spacing: 2px;
+    position: fixed;        /* Fixa o botão na tela */
+    bottom: 20px;           /* Distância do rodapé */
+    left: 50%;              /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    z-index: 1000;          /* Garante que fique acima dos outros elementos */
+}
 
+#restart-btn:hover {
+    background: #ffe066;
+    color: #b8860b;
+    transform: translateX(-50%) translateY(2px);
+    box-shadow: 0 2px #b8860b, 0 4px #fff200;
+}
 
 @keyframes clouds_animation {
     from {
